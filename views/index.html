@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> أومغا الإلكتروني</title>
+    
+</head>
+<body>
+    <!-- navbar -->
+<!-- شريط التنقل -->
+<nav>
+    <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">المنتجات الجديدة</a></li>
+        <li><a href="add_product.html">أضافة منتج جديد</a></li>
+        <li>
+            <a href="#">التصنيفات ⬇</a>
+            <ul class="dropdown">
+                <li><a href="#">الهواتف</a></li>
+                <li><a href="#">الابتوبات</a></li>
+                <li><a href="#">السماعات</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+      <br>
+    <!-- الهيدر -->
+    <header>
+        متجر اومغا للاجهزة الإلكترونية
+        <div>
+            <h3 >
+                المنتجات الجديدة
+            </h3>
+        </div>
+    </header>
+
+    <!-- المنتجات -->
+    <div class="container">
+    
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\1.jpg" alt="منتج 1">
+            <h2>IPhone 15 pro max</h2>
+            <p>وصف المنتج 1</p>
+            <span>السعر: 12.000 دينار</span>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\2.jpg" alt="منتج 2">
+            <h2>Headphone pro</h2>
+            <p>وصف المنتج 2</p>
+            <span>السعر: 20.00 دينار</span>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\3.jpg" alt="منتج 3">
+            <h2>Apple Watch 3max</h2>
+            <p>وصف المنتج 3</p>
+            <span>السعر: 30.00 دينار</span>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\4.jpg" alt="منتج 4">
+            <h2>Printer HP</h2>
+            <p>وصف المنتج 4</p>
+            <span>السعر: 40.00 دينار</span>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\5.png" alt="منتج 5">
+            <h2>HeadPhone Mix</h2>
+            <p>وصف المنتج 5</p>
+            <span>السعر: 50.00 دينار</span>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Mus3B\Desktop\Front-end\assets\img\6.png" alt="منتج 6">
+            <h2>Laptop Games</h2>
+            <p>وصف المنتج 6</p>
+            <span>السعر: 600.000 دينار</span>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025</p>
+        <div class="social-icons">
+            <a href="#">🔵 فيسبوك</a>
+            <a href="#">🟣 إنستجرام</a>
+            <a href="#">🔷 تويتر</a>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        
+        /* تصميم الهيدر */
+        header {
+            background-color: white;
+            color: #4B0082;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+          /* تصميم شريط التنقل */
+    nav {
+        background-color: #4B0082;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        position: relative;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 10px 15px;
+        display: block;
+        transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #6A0DAD;
+        border-radius: 5px;
+    }
+
+    /* تصميم القائمة المنسدلة */
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        top: 40px;
+        left: 0;
+        min-width: 160px;
+        text-align: left;
+        z-index: 1000;
+    }
+
+    .dropdown li {
+        width: 100%;
+    }
+
+    .dropdown li a {
+        color: #4B0082;
+        padding: 10px;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .dropdown li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    nav ul li:hover .dropdown {
+        display: block;
+    }
+        
+        /* تصميم الصفحة الرئيسية */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product:hover {
+            transform: scale(1.1);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            color: #4B0082;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .product span {
+            display: block;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 10px;
+        }
+        
+        /* تصميم الفوتر */
+        footer {
+            background-color: #4B0082;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+
+</body>
+</html>
